@@ -7,6 +7,7 @@ var surname = ["Cattaneo" , "Basilico" , "Bassani" , "Pizzi", "Castelnovo"];
 
 var userSurname = prompt("Qual è il cognome da inserire nella lista ?");
 
+
 //INSERIAMO IN COGNOME DIGITATO NELL'ARRAY
 
 surname.push(userSurname);
@@ -15,9 +16,8 @@ surname.push(userSurname);
 surname = surname.sort();
 
 
-// console.log(surname);
-
-
-document.getElementById("surnameList").innerHTML= surname;
-
-
+for (var i=0; i<surname.length; i++){
+   if(userSurname === surname[i]){
+      var surnameFound = i+1
+   
+// DA FINIRE 
